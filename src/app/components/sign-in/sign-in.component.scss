@@ -1,0 +1,69 @@
+.body {
+  margin: -8px;
+  background: url('https://www.researchgate.net/profile/Hossein-Sarempour-2/post/Does_anybody_know_about_Pastoral_genre_in_Persian_literature/attachment/5f2ecc6cce377e00016c3370/AS%3A922289742827521%401596902418783/image/BBC+Programmes.jpg') no-repeat center center fixed;
+  background-size: cover;
+  opacity: .9;
+  overflow: hidden;
+  height: 90.5vh;
+}
+
+.container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 70px;
+}
+
+.input-fields {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 9%;
+
+  input {
+    width: 50%;
+    margin-top: 3%;
+    padding: 12px 20px;
+    padding-top: 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-left: 15%;
+    margin-right: 25%;
+    font-size: large;
+    font-weight: bold;
+    opacity: 0.99;
+  }
+}
+
+.button-div {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  button {
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: black;
+    opacity: 0.89;
+    color: white;
+  }
+
+  button:hover {
+    -webkit-transform: scale(3);
+    -ms-transform: scale(3);
+    transform: scale(1.2);
+    border-radius: 14px;
+    transition: all 0.7s;
+    opacity: 1;
+  }
+}
+
+.completed-text{
+    font-size: xx-large;
+}

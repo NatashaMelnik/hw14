@@ -1,0 +1,120 @@
+.body {
+  margin: -8px;
+  background: url('https://www.researchgate.net/profile/Hossein-Sarempour-2/post/Does_anybody_know_about_Pastoral_genre_in_Persian_literature/attachment/5f2ecc6cce377e00016c3370/AS%3A922289742827521%401596902418783/image/BBC+Programmes.jpg') no-repeat center center fixed;
+  background-size: cover;
+  opacity: .9;
+  overflow: hidden;
+  height: 90.5vh; 
+}
+
+input.ng-dirty.ng-invalid {
+  color: red;
+  border-color: red;
+}
+
+.popup {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  border: 2px;
+  padding: 20px;
+  border-radius: 4px;
+  position: fixed;
+  width: 550px;
+  height: 250px;
+  top: 50%;
+  left: 50%;
+  margin-top: -16%;
+  margin-left: -15.5%;
+  margin-right: 25%;
+  font-size: x-large;
+  font-weight: bold;
+  border: 2px solid black;
+  .okiButton{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+    button {
+      width: 100px;
+      height: 50px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      background-color: black;
+      opacity: 0.89;
+      color:white;
+    }
+    button:hover {
+      -webkit-transform: scale(3);
+      -ms-transform: scale(3);
+      transform: scale(1.2);
+      border-radius: 14px;
+      transition: all 0.7s;
+      opacity: 1;
+    }
+  }
+}
+
+.okiButton {
+  justify-content: center;
+}
+
+p {
+  margin-bottom: 10%;
+}
+
+fieldset {
+  margin-top: 3%;
+  margin-left: 25%;
+  margin-right: 25%;
+  scroll-behavior: smooth;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.7;
+  padding-top: 3%;
+  padding-bottom: 3%;
+
+  input {
+    width: 70%;
+    margin-top: 3%;
+    padding: 12px 20px;
+    padding-top: 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-left: 15%;
+    margin-right: 25%;
+    font-size: large;
+    font-weight: bold;
+    opacity: 0.99;
+  }
+}
+
+.signUpClick {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  button {
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: black;
+    opacity: 0.89;
+    color:white;
+  }
+  button:hover {
+    -webkit-transform: scale(3);
+    -ms-transform: scale(3);
+    transform: scale(1.2);
+    border-radius: 14px;
+    transition: all 0.7s;
+    opacity: 1;
+  }
+}

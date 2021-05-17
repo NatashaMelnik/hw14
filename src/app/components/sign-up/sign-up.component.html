@@ -1,0 +1,48 @@
+<app-nav></app-nav>
+
+<!-- <p>sign-up works!</p> -->
+
+<div class="body">
+  <div class="inputFields">
+    <fieldset [formGroup]="fullNameControl">
+      <div>
+        <input
+          formControlName="firstName"
+          placeholder="first name"
+          class="firstName"
+          #firstName
+        />
+      </div>
+      <div>
+        <input formControlName="lastName" placeholder="last name" />
+      </div>
+      <div>
+        <input type="email" formControlName="mail" placeholder="mail" />
+      </div>
+      <div>
+        <input formControlName="phoneNumber" placeholder="phone number" />
+      </div>
+      <div>
+        <input
+          type="password"
+          formControlName="password"
+          placeholder="password"
+        />
+      </div>
+    </fieldset>
+  </div>
+
+  <div class="signUpClick">
+    <button (click)="signUpClick()">Sign Up!</button>
+  </div>
+
+  <div class="bg-modal">
+    <div class="popup" *ngIf="conditionPopup">
+      <p *ngIf="conditionNotAllFields">fill all the fields</p>
+      <p *ngIf="conditionOfSuccess">complete with success</p>
+      <div class="okiButton">
+        <button class="okiButton" (click)="closePopup()">oki</button>
+      </div>
+    </div>
+  </div>
+</div>

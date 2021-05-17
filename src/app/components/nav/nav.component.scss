@@ -1,0 +1,67 @@
+.container {
+  margin: -8px;
+  display: flex;
+  height: 90px;
+  justify-content: space-between;
+  background-color: black;
+  text-align: center;
+
+  .main-nav {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+  }
+}
+
+.sign-nav {
+  margin-right: 20px;
+  margin-left: -127px;
+}
+
+.link {
+  margin-top: 1.4%;
+  margin-left: 27%;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  font-style: bold;
+  font-weight: 900;
+  font-size: large;
+  background-color: #ff9d00c9;
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.link-sign {
+  margin-top: 1.4%;
+  margin-left: 380px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  width: 95px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.link:hover,
+.link-sign:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  background: #ff9d00;
+}

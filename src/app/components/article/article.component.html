@@ -1,0 +1,209 @@
+<app-nav></app-nav>
+
+<div class="body">
+  <div class="article-body">
+    <h1>{{ textService.h1 }}</h1>
+    <hr />
+    <blockquote>
+      <p>
+        {{ textService.blockquote }}
+      </p>
+    </blockquote>
+    <a routerLink="./" [fragment]="'phillip-III-dobriy'">
+      <h2 id="phillip-III-dobriy">{{ textService.phillipiii_h2 }}</h2>
+    </a>
+    <img src="{{imageService.phillip_img}}" alt="" />
+    <p>
+      {{ textService.phillipiii_p_1 }}
+    </p>
+    <a routerLink="./" [fragment]="'biblioteka-phillipa-iii-dobrogo'">
+      <h2 id="biblioteka-phillipa-iii-dobrogo">
+        {{ textService.bibliot_h2 }}
+      </h2>
+    </a>
+    <p>
+      {{ textService.bibliot_p_1 }}
+    </p>
+    <p>
+      {{ textService.bibliot_p_2 }}
+    </p>
+    <a routerLink="./" [fragment]="'tsvet-istoriy'">
+      <h2 id="tsvet-istoriy">{{ textService.tsvet_h2 }}</h2>
+    </a>
+    <p>
+      {{ textService.tsvet_p_1 }}
+    </p>
+    <img src="{{imageService.tsvet_img}}" alt="" />
+    <p>
+       {{ textService.tsvet_p_2 }}
+    </p>
+    <div>
+      <hr />
+      <h3 (click)="toggleAuthor()">{{ textService.avtor_h3 }}</h3>
+    </div>
+    <div *ngIf="conditionAuthor">
+      <p>
+        {{ textService.avtor_p_1 }}
+      </p>
+      <p>
+        {{ textService.avtor_p_2 }}
+      </p>
+      <p>
+        {{ textService.avtor_p_3 }}
+      </p>
+    </div>
+    <div>
+      <hr />
+      <h3 (click)="toggleTitle()">{{ textService.nazv_h3 }}</h3>
+    </div>
+    <div *ngIf="conditionTitle">
+      <p>
+        {{ textService.nazv_p_1 }}
+      </p>
+    </div>
+    <div>
+      <hr />
+      <h3 (click)="toggleStruct()">{{ textService.struct_h3 }}</h3>
+    </div>
+    <div *ngIf="conditionStruct">
+      <p>
+        {{ textService.struct_p_1 }}
+      </p>
+    </div>
+    <div>
+      <hr />
+      <h3 (click)="toggleText()">{{ textService.textIPol_h3 }}</h3>
+    </div>
+    <div *ngIf="conditionText">
+      <p>
+        {{ textService.textIPo_p_1 }}
+      </p>
+      <img src="{{imageService.textIPol_img_1}}" alt="" />
+      <p>
+        {{ textService.textIPol_p_2 }}
+      </p>
+      <div class="containerTxet">
+        <div class="carousel">
+          <div class="slider" #sliderText>
+            <section>
+              <img
+                src="{{imageService.textIPol_img_2}}"
+                alt=""
+              />
+            </section>
+            <section>
+              <img
+                src="{{imageService.textIPol_img_3}}"
+                alt=""
+              />
+            </section>
+            <section>
+              <img
+                src="{{imageService.textIPol_img_4}}"
+                alt=""
+              />
+            </section>
+            <section>
+              <img
+                src="{{imageService.textIPol_img_5}}"
+                alt=""
+              />
+            </section>
+          </div>
+          <div class="controls">
+            <span class="arrow left2" #left2 (click)="moveLeftText()">
+              <span class="material-icons"> arrow_back_ios </span>
+            </span>
+            <span class="arrow right" #right2 (click)="moveRightText()">
+              <span class="material-icons"> arrow_forward_ios </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <p>
+        {{ textService.textIPol_p_3 }}
+      </p>
+    </div>
+    <div>
+      <hr />
+      <h3 (click)="toggleMiniat()">{{ textService.miniat_h3 }}</h3>
+    </div>
+    <div *ngIf="conditionMiniat">
+      <p>
+        {{ textService.miniat_p_1 }}
+      </p>
+      <div>
+        <img
+          src="{{imageService.miniat_img_1}}"
+          alt=""
+        />
+        <img
+          src="{{imageService.miniat_img_2}}"
+          alt=""
+        />
+      </div>
+      <p>
+        {{ textService.miniat_p_2 }}
+      </p>
+      <p>
+        {{ textService.miniat_p_3 }}
+      </p>
+      <div class="container">
+        <div class="carousel">
+          <div class="slider" #sliderMiniat>
+            <section>
+              <img
+                src="{{imageService.miniat_img_3}}"
+                alt=""
+              />
+            </section>
+            <section>
+              <img
+                src="{{imageService.miniat_img_4}}"
+                alt=""
+              />
+            </section>
+            <section>
+              <img
+                src="{{imageService.miniat_img_5}}"
+                alt=""
+              />
+            </section>
+            <section>
+              <img
+                src="{{imageService.miniat_img_6}}"
+                alt=""
+              />
+            </section>
+            <section> 
+              <img
+                src="{{imageService.miniat_img_7}}"
+                alt=""
+              />
+            </section>
+          </div>
+          <div class="controls">
+            <span class="arrow left" #left (click)="moveLeftMiniat()">
+              <span class="material-icons"> arrow_back_ios </span>
+            </span>
+            <span class="arrow right" #right (click)="moveRightMiniat()">
+              <span class="material-icons"> arrow_forward_ios </span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <p>
+        {{ textService.miniat_p_4 }}
+      </p>
+      <img
+        src="{{imageService.miniat_img_8}}"
+        alt=""
+      />
+      <p>
+        {{ textService.miniat_p_5 }}
+      </p>
+    </div>
+  </div>
+  <hr />
+</div>

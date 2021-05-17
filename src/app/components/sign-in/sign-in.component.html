@@ -1,0 +1,17 @@
+<app-nav></app-nav>
+
+<div class="body">
+  <div class="container">
+    <!-- <h1>Sign in:</h1> -->
+    <div class="input-fields">
+      <input class="input" [(ngModel)]="person.login" placeholder="login" minlength="10" #uname="ngModel"/>
+      <input class="input" [(ngModel)]="person.password" placeholder="password" type="password" minlength="10" #upass="ngModel"/>
+    </div>
+    <div *ngIf="uname.errors?.minlength && upass.errors?.minlength" class="button-div">
+      <button (click)="addPerson()" class="addPerson-button">Sign in!</button>
+    </div>
+    <div *ngIf="signedIn" class="completed-text">
+      <h3>completed</h3>
+    </div>
+  </div>
+</div>
