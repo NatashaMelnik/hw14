@@ -8,11 +8,11 @@ import { ArticleComponent } from '../article/article.component';
   styleUrls: ['./articles.component.scss'],
 })
 export class ArticlesComponent implements OnInit {
-  constructor(private _router: Router) {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
 
-  goToArticle(scr: string) {
-    this._router.navigateByUrl('article'+'#'+scr);
+  goToArticle(scr: string): void {
+    this.router.navigateByUrl('article' + '#' + scr);
   }
 }

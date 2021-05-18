@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
-import { ArticlesComponent } from './components/articles/articles.component'
-import { HomeComponent } from './components/home/home.component'
-import { ArticleComponent } from './components/article/article.component'
-import { SignInComponent } from './components/sign-in/sign-in.component'
-import { SignUpComponent } from './components/sign-up/sign-up.component'
+import { ArticlesComponent } from './components/articles/articles.component';
+import { HomeComponent } from './components/home/home.component';
+import { ArticleComponent } from './components/article/article.component';
+import { SignInComponent } from './components/sign-in/sign-in.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
 
 import { RouterModule, Routes, ExtraOptions } from '@angular/router';
 

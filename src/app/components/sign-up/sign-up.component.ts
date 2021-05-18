@@ -9,11 +9,11 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class SignUpComponent implements OnInit {
   fullNameControl: FormGroup;
-  validStatus: string = '';
-  conditionPopup: boolean = false; // set false
-  conditionOfSuccess: boolean = false;
-  conditionNotAllFields: boolean = false;
-  endOfReg: boolean = false;
+  validStatus = '';
+  conditionPopup = false;
+  conditionOfSuccess = false;
+  conditionNotAllFields = false;
+  endOfReg = false;
 
   constructor() {
     this.fullNameControl = new FormGroup({
@@ -36,17 +36,13 @@ export class SignUpComponent implements OnInit {
       ]),
       password: new FormControl('', [Validators.minLength(3)]),
     });
-    // this.fullNameControl.valueChanges.subscribe((value) => console.log(value));
     this.fullNameControl.statusChanges.subscribe((status) => {
       this.validStatus = status;
-      //console.log(status);
     });
   }
 
   signUpClick(): void {
     if (this.validStatus === 'VALID' && this.checkEmptyFields()) {
-      //console.log('vAAAlIIIIId!!!');
-      //console.log(this.fullNameControl.value);
       this.conditionOfSuccess = true;
       this.conditionPopup = false;
       this.showPopup();

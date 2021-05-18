@@ -12,28 +12,31 @@ export class ArticleComponent implements OnInit {
   @ViewChild('sliderText', { read: ElementRef }) sliderText!: ElementRef;
   textService: any;
   imageService: any;
-
-  constructor(
-    private _textService: PageTextService,
-    private _imageServise: PageTextService
-  ) {
-    this.textService = _textService.getListTexts();
-    this.imageService = _imageServise.getListImages();
-  }
-
-  ngOnInit(): void {}
-
   textSlider: object = {
     sectionIndex: 0,
     maxElement: 3,
     rotateGrad: 25,
   };
-
+  conditionAuthor = false;
+  conditionTitle = false;
+  conditionStruct = false;
+  conditionText = true;
+  conditionMiniat = true;
   miniatSlider: object = {
     sectionIndex: 0,
     maxElement: 4,
     rotateGrad: 20,
   };
+
+  constructor(
+    private textServiceT: PageTextService,
+    private imageServiseT: PageTextService
+  ) {
+    this.textService = textServiceT.getListTexts();
+    this.imageService = imageServiseT.getListImages();
+  }
+
+  ngOnInit(): void {}
 
   moveLeftText(): void {
     this.moveLeft(this.textSlider, this.sliderText);
@@ -43,14 +46,14 @@ export class ArticleComponent implements OnInit {
     this.moveRight(this.textSlider, this.sliderText);
   }
 
-  moveLeftMiniat() {
+  moveLeftMiniat(): void {
     this.moveLeft(this.miniatSlider, this.sliderMiniat);
   }
-  moveRightMiniat() {
+  moveRightMiniat(): void {
     this.moveRight(this.miniatSlider, this.sliderMiniat);
   }
 
-  moveRight(slider: any, sliderCon: any) {
+  moveRight(slider: any, sliderCon: any): void {
     slider.sectionIndex =
       slider.sectionIndex < slider.maxElement - 1
         ? slider.sectionIndex + 1
@@ -64,12 +67,6 @@ export class ArticleComponent implements OnInit {
     sliderCon.nativeElement.style.transform =
       'translate(' + slider.sectionIndex * -slider.rotateGrad + '%)';
   }
-
-  conditionAuthor: boolean = false;
-  conditionTitle: boolean = false;
-  conditionStruct: boolean = false;
-  conditionText: boolean = true; // set false   // slider
-  conditionMiniat: boolean = true; // set false   // slider
 
   toggleAuthor(): void {
     this.conditionAuthor = !this.conditionAuthor;

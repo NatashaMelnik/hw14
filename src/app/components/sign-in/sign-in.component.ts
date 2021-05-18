@@ -10,15 +10,15 @@ import { IPerson } from '../../services/person';
 export class SignInComponent implements OnInit {
   people!: IPerson[];
   person: IPerson = {};
-  signedIn: Boolean = false;
+  signedIn = false;
 
   constructor(private apiService: ApiService) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.refreshPeople();
   }
 
-  refreshPeople() {
+  refreshPeople(): void {
     this.apiService
       .getPeople()
       .subscribe((data) => {
@@ -26,7 +26,7 @@ export class SignInComponent implements OnInit {
       });
   }
 
-  addPerson() {
+  addPerson(): void {
     this.apiService.addPerson(this.person).subscribe((data) => {
       this.refreshPeople();
     });

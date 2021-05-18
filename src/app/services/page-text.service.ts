@@ -55,28 +55,28 @@ export class PageTextService {
   };
 
   private listPageImages: object = {
-    phillip_img: "http://t0.gstatic.com/images?q=tbn:ANd9GcRYFJDsdsiEKO9UIiDD7iyMM84NPS2cga65X6jbfee8vKta0zWi5_7fziRlk7kD",
-    tsvet_img: "https://cdn-s-static.arzamas.academy/uploads/ckeditor/pictures/17432/man-f1.jpg",
-    textIPol_img_1: "https://cdn-s-static.arzamas.academy/uploads/ckeditor/pictures/17433/man-f11.jpg",
-    textIPol_img_2: "https://cdn-s-static.arzamas.academy/storage/picture/11269/picture-9398f08e-3375-4b3b-99db-78acb8f019f4.jpg",
-    textIPol_img_3: "https://cdn-s-static.arzamas.academy/storage/picture/11270/picture-5eef3fe2-63cb-482c-a896-002e4407fb2d.jpg",
-    textIPol_img_4: "https://cdn-s-static.arzamas.academy/storage/picture/11271/picture-5d33cda8-f3b9-46ef-9248-a4186b77eccb.jpg",
-    textIPol_img_5: "https://cdn-s-static.arzamas.academy/storage/picture/11272/picture-deedebb8-0cf2-4d61-804f-cfbae36f645c.jpg",
-    miniat_img_1: "https://cdn-s-static.arzamas.academy/storage/picture/11275/picture-fcd300aa-e9a4-474f-a046-c77ab3423acb.jpg",
-    miniat_img_2: "https://cdn-s-static.arzamas.academy/storage/picture/11276/picture-a4d16999-4ce8-4f52-b238-3f63e4fc1fc8.jpg",
-    miniat_img_3: "https://cdn-s-static.arzamas.academy/storage/picture/11277/picture-9d8c91af-8a4f-49bb-933f-78439cc2847d.jpg",
-    miniat_img_4: "https://cdn-s-static.arzamas.academy/storage/picture/11278/picture-e5e87f6b-e012-4a5c-a89c-4e2f19ee2299.jpg",
-    miniat_img_5: "https://cdn-s-static.arzamas.academy/storage/picture/11279/picture-7c250dd7-3b58-48f5-9198-fb7bab085e45.jpg",
-    miniat_img_6: "https://cdn-s-static.arzamas.academy/uploads/ckeditor/pictures/17399/man-vis.jpg",
-    miniat_img_7: "https://cdn-s-static.arzamas.academy/storage/picture/11279/picture-7c250dd7-3b58-48f5-9198-fb7bab085e45.jpg",
-    miniat_img_8: "https://cdn-s-static.arzamas.academy/uploads/ckeditor/pictures/17399/man-vis.jpg"
+    phillip_img: 'http://t0.gstatic.com/images?q=tbn:ANd9GcRYFJDsdsiEKO9UIiDD7iyMM84NPS2cga65X6jbfee8vKta0zWi5_7fziRlk7kD',
+    tsvet_img: 'https://cdn-s-static.arzamas.academy/uploads/ckeditor/pictures/17432/man-f1.jpg',
+    textIPol_img_1: 'https://cdn-s-static.arzamas.academy/uploads/ckeditor/pictures/17433/man-f11.jpg',
+    textIPol_img_2: 'https://cdn-s-static.arzamas.academy/storage/picture/11269/picture-9398f08e-3375-4b3b-99db-78acb8f019f4.jpg',
+    textIPol_img_3: 'https://cdn-s-static.arzamas.academy/storage/picture/11270/picture-5eef3fe2-63cb-482c-a896-002e4407fb2d.jpg',
+    textIPol_img_4: 'https://cdn-s-static.arzamas.academy/storage/picture/11271/picture-5d33cda8-f3b9-46ef-9248-a4186b77eccb.jpg',
+    textIPol_img_5: 'https://cdn-s-static.arzamas.academy/storage/picture/11272/picture-deedebb8-0cf2-4d61-804f-cfbae36f645c.jpg',
+    miniat_img_1: 'https://cdn-s-static.arzamas.academy/storage/picture/11275/picture-fcd300aa-e9a4-474f-a046-c77ab3423acb.jpg',
+    miniat_img_2: 'https://cdn-s-static.arzamas.academy/storage/picture/11276/picture-a4d16999-4ce8-4f52-b238-3f63e4fc1fc8.jpg',
+    miniat_img_3: 'https://cdn-s-static.arzamas.academy/storage/picture/11277/picture-9d8c91af-8a4f-49bb-933f-78439cc2847d.jpg',
+    miniat_img_4: 'https://cdn-s-static.arzamas.academy/storage/picture/11278/picture-e5e87f6b-e012-4a5c-a89c-4e2f19ee2299.jpg',
+    miniat_img_5: 'https://cdn-s-static.arzamas.academy/storage/picture/11279/picture-7c250dd7-3b58-48f5-9198-fb7bab085e45.jpg',
+    miniat_img_6: 'https://cdn-s-static.arzamas.academy/uploads/ckeditor/pictures/17399/man-vis.jpg',
+    miniat_img_7: 'https://cdn-s-static.arzamas.academy/storage/picture/11279/picture-7c250dd7-3b58-48f5-9198-fb7bab085e45.jpg',
+    miniat_img_8: 'https://cdn-s-static.arzamas.academy/uploads/ckeditor/pictures/17399/man-vis.jpg'
   };
 
-  public getListTexts() {
+  public getListTexts(): object {
     return this.listPageTexts;
   }
 
-  public getListImages() {
+  public getListImages(): object {
     return this.listPageImages;
   }
 
